@@ -13,6 +13,14 @@ export default defineConfig({
     outDir: "dist",
     minify: true,
     cssMinify: true,
+    assetsDir: "assets",
+    rollupOptions: {
+      output: {
+        assetFileNames: "assets/[name]-[hash][extname]",
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js",
+      },
+    },
   },
   css: {
     postcss: {
