@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KM Properties</title>
+    <!-- Google Fonts - Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <!-- import styles -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 left-0 bg-white shadow-sm z-50">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="assets/images/logo.jpg"
+              alt="KM Properties Logo"
+              class="h-8"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-gray-600 hover:text-red-950">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="#properties" class="text-gray-600 hover:text-blue-600"
+              >Properties</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+            <button
+              class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden" id="mobile-menu-button">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-16 6h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="flex flex-col space-y-4 mt-4 pb-4">
+            <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="#properties" class="text-gray-600 hover:text-blue-600"
+              >Properties</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+            <button
+              class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-r from-blue-600 to-blue-800">
+      <div class="container mx-auto px-4 py-20">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 text-white mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+              Find Your Dream Property sdsd
+            </h1>
+            <p class="text-lg mb-8 text-gray-200">
+              Discover the perfect property that matches your lifestyle and
+              preferences.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <input
+                type="text"
+                placeholder="Search properties..."
+                class="px-6 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <button
+                class="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
+              >
+                Search Now
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="assets/images/hero-image.png"
+              alt="Property"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
